@@ -73,7 +73,7 @@ namespace Installer
         {
             System.Console.BackgroundColor = ConsoleColor.Gray;
             Console.SetCursorPosition(0, 0);
-            Console.WriteLine("                                PatchOSInstaller                                ", Color.Red);
+            Console.WriteLine("                                PatchOS2Installer                                ", Color.Red);
             System.Console.BackgroundColor = ConsoleColor.Blue;
         }
 
@@ -586,7 +586,7 @@ namespace Installer
             Log.Success("Done copying files in " + (end - start));
             DrawUpdates("Done copying files in " + (end - start));
             Thread.Sleep(1000);
-            DrawTable(1, "Rebooting");
+            DrawTable(1, "PatchOS2 is Now Rebooting");
             Thread.Sleep(2000);
             Cosmos.System.Power.Reboot();
         }
